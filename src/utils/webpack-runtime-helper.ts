@@ -1,12 +1,12 @@
-import yargs from 'yargs'
+import * as yargs from 'yargs'
 import * as fs from 'fs'
 import * as path from 'path'
 import { md5 } from './math'
-import _ from 'lodash'
+import * as _ from 'lodash'
 
 class ProjectConfig {
   // 入口文件
-  entrys: string[] = ["src/index"]
+  entrys: string[] = ["../built/index"]
   // prodution entrys
   productionEntrys: string[] = null
   // 需要 dll 的包名

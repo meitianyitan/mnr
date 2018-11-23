@@ -1,5 +1,5 @@
 import { exec as nodeExec, ExecOptions } from 'child_process'
-import _ from 'lodash'
+import * as _ from 'lodash'
 
 export function exec(shell: string, options?: ExecOptions): Promise<string> {
   return new Promise((resolve, reject) => {
