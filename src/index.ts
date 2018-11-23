@@ -32,6 +32,7 @@ commander.command('develop')
   .description('start dev server')
   .action(async () => {
     // 设置了 dll 才会解析
+    console.log(cliCwd)
     if (projectConfig.dlls.length > 0) {
       await spinner('编译 dlls', async () => {
         await exec(`${webpackPath} --config ${webpackDllPath} --env.projectCwd ${projectCwd} --env.cliCwd ${cliCwd}`, {
