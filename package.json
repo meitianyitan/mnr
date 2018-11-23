@@ -1,6 +1,6 @@
 {
   "name": "mnr",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Run react project by integrate webpack.",
   "main": "built/index.js",
   "types": "src/index.ts",

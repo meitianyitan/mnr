@@ -47,7 +47,7 @@ export function getProjectConfig(currentProjectCwd = projectCwd) {
   if (fs.existsSync(packageJsonPath)) {
     const packageJson = JSON.parse(fs.readFileSync(packageJsonPath).toString())
     if (packageJson['mnr']) {
-      projectConfig = _.merge(projectConfig, packageJson('mnr'))
+      projectConfig = _.merge(projectConfig, packageJson['mnr'])
     }
   }
 
