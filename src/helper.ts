@@ -1,4 +1,4 @@
-import Container from './container'
+import Container from "./container"
 
 export declare interface IObjectType<T> {
   new(): T
@@ -9,7 +9,7 @@ export declare type ICombineActions<T> = {
 }
 
 type Partial<T> = {
-  [P in keyof T]?: T[P]
+  [P in keyof T]?: T[P];
 }
 
 /**

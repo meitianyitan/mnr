@@ -1,6 +1,6 @@
 {
   "name": "mnr",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Powerful dependency injection tool.",
   "main": "built/index.js",
   "types": "src/index.ts",

@@ -1,4 +1,4 @@
-import { globalState } from './utils'
+import { globalState } from "./utils"
 
 interface normalObject {
   [x: string]: any
@@ -46,7 +46,7 @@ export default class Container {
         }
       })
     }
-    
+
     return instance
   }
 }

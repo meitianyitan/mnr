@@ -1,25 +1,28 @@
-// import test from 'ava'
-// import { Container, inject, injectFactory } from '../index'
+import { inject, injectFactory } from '../index'
 
-// class Store {
-//   num = 1
-// }
+class Store {
+  num = 1
+}
 
-// class Action {
-//   @inject(Store)
-//   private store: Store
+class Action {
+  // @inject(Store)
+  // private store: Store
+
+  // // constructor(store: Store) {
+  // //   this.store = store
+  // // }
   
 
-//   setNum(num: number) {
-//     this.store.num = num
-//   }
-// }
+  // setNum(num: number) {
+  //   this.store.num = num
+  // }
+}
 
-// const result = injectFactory({
-//   Store,
-//   Action
-// })
+const result = injectFactory({
+  Store,
+  Action
+})
 
-// console.log(123, result.Action)
+console.log(123, result.Action)
 
-// // result.group.Action.setNum(2)
+// result.group.Action.setNum(2)
