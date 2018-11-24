@@ -1,14 +1,27 @@
 {
   "name": "mnr",
-  "version": "0.0.3",
-  "description": "Run react project by integrate webpack.",
+  "version": "0.0.4",
+  "description": "Powerful dependency injection tool.",
   "main": "built/index.js",
   "types": "src/index.ts",
-  "bin": {
-    "mnr": "built/index.js"
-  },
   "scripts": {
-    "prepublish": "tsc"
+    "start": "vai develop",
+    "build": "vai production",
+    "prepublish": "rm -rf built && tsc && babel built --out-dir built && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "vai": {
+    "entrys": [
+      "src/index"
+    ],
+    "dlls": [
+      "react",
+      "react-dom"
+    ],
+    "production": {
+      "path": "built",
+      "filename": "bundle.js"
+    }
   },
   "repository": {
     "type": "git",
@@ -20,33 +33,15 @@
     "url": "https://github.com/meitianyitan/mnr/issues"
   },
   "homepage": "https://github.com/meitianyitan/mnr#readme",
-  "dependencies": {
-    "ava": "^0.18.2",
-    "babel-loader": "^7.1.2",
-    "case-sensitive-paths-webpack-plugin": "^2.0.0",
-    "colors": "^1.1.2",
-    "commander": "^2.9.0",
-    "concurrently": "^3.4.0",
-    "format-json": "^1.0.3",
-    "lodash": "^4.17.4",
-    "opn": "^4.0.2",
-    "ora": "^1.3.0",
-    "portfinder": "^1.0.13",
-    "react-hot-loader": "^3.0.0-beta.7",
-    "ts-loader": "^2.3.7",
-    "typescript": "^2.5.2",
-    "uglifyjs-webpack-plugin": "^2.0.1",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.8.2",
-    "yargs": "^8.0.2"
-  },
   "devDependencies": {
-    "@types/colors": "^1.1.1",
-    "@types/lodash": "^4.14.74",
-    "@types/node": "^7.0.43",
-    "@types/opn": "^3.0.28",
-    "@types/ora": "^1.3.1",
-    "@types/webpack": "^3.0.10",
-    "@types/yargs": "^8.0.2"
+    "@types/webpack": "^4.4.19",
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "typescript": "^3.1.6",
+    "vai": "^0.0.4",
+    "webpack": "^3.5.6"
   }
 }

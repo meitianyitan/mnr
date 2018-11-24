@@ -1,18 +1,14 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "module": "commonjs",
-    "noImplicitAny": false,
+    "strict": true,
     "target": "es6",
     "removeComments": true,
-    "preserveConstEnums": true,
-    "jsx": "react",
     "sourceMap": true,
     "outDir": "built",
     "moduleResolution": "node",
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    // "allowSyntheticDefaultImports": true
+    "emitDecoratorMetadata": true
   },
   "exclude": [
     "node_modules",
