@@ -1,4 +1,4 @@
-const tag = "ascoders-dependency-inject"
+const tag = "meitianyitan-mnr"
 
 declare var global: any
 

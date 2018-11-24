@@ -1,14 +1,14 @@
 {
   "name": "mnr",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Powerful dependency injection tool.",
   "main": "built/index.js",
   "types": "src/index.ts",
   "scripts": {
+    "test": "tsc",
     "start": "vai develop",
     "build": "vai production",
-    "prepublish": "rm -rf built && tsc && babel built --out-dir built && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "rm -rf built && tsc && babel built --out-dir built && npm run build"
   },
   "vai": {
     "entrys": [
